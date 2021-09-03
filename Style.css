@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    grid-template-areas: "upper upper upper upper upper" 
+    "b1 b2 b3 b4 b5" ;
+    grid-gap: 0.2rem ;
+}
+
+.upper{
+    grid-area: upper;
+    background-image: url("1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.b1{
+    grid-area: b1;
+}
+
+.b2{
+    grid-area: b2;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+}
+.b3{
+    grid-area: b3;
+}
+.b4{
+    grid-area: b4;
+}
+.b5{
+    grid-area: b5;
+}
+
+
+.box{
+   line-height: 100%;
+   padding-top: 20px;
+}
+
+.fas{
+    font-size: 30px;
+}
+
+.img-cont{
+    border-radius: 50%; 
+    width: 70px; 
+    height:70px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.box h5, .box h2{
+    text-align: center;
+}
+
+.b2 div{
+    height: 50%;
+    display: flex;
+}
+.b2 div h3{
+    display: inline-block;
+}
+
+.place{
+    float: right;
+    padding-right: 50px;
+    padding-top: 50px;
+    font-size: 25px;
+}
+
+.time{
+    float: left;
+    padding-left: 50px;
+    padding-top: 50px;
+    font-size: 25px;
+}
+
+
+@media only screen and (max-width:500px){
+    .container  {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 4fr 1.5fr 1.5fr ;
+        grid-template-areas: "upper upper upper upper upper upper" 
+        "b1 b1 b1 b2 b2 b2"
+        "b3 b3 b4 b4 b5 b5";
+    }
+
+    .place{
+        float: right;
+        padding-right: 10px;
+        padding-top: 10px;
+        font-size: 15px;
+    }
+    
+    .time{
+        float: left;
+        padding-left: 10px;
+        padding-top: 10px;
+        font-size: 15px;
+    }
+ 
+}

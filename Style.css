@@ -11,6 +11,7 @@
     grid-template-areas: "upper upper upper upper upper" 
     "b1 b2 b3 b4 b5" ;
     grid-gap: 0.2rem ;
+    font-family: 'Barlow', sans-serif;
 }
 
 .upper{
@@ -86,6 +87,12 @@
     font-size: 25px;
 }
 
+.dash{
+    width: 40px;
+    border-bottom: 2px solid black;
+    margin: 10px;
+}
+
 
 @media only screen and (max-width:500px){
     .container  {
@@ -96,6 +103,7 @@
         grid-template-areas: "upper upper upper upper upper upper" 
         "b1 b1 b1 b2 b2 b2"
         "b3 b3 b4 b4 b5 b5";
+        font-family: 'Barlow', sans-serif;
     }
 
     .place{
@@ -110,6 +118,9 @@
         padding-left: 10px;
         padding-top: 10px;
         font-size: 15px;
+    }
+    .b2{
+        padding: 20px 0;
     }
  
 }
